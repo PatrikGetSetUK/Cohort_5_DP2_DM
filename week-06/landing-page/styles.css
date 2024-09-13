@@ -1,0 +1,183 @@
+/* CSS General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu {
+  /* Hidden on mobile devices */
+  display: none;
+}
+
+.burger-menu {
+  font-size: 2rem;
+  cursor: pointer;
+  /* Display on mobile devices */
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+.mobile-menu a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Hero section */
+#hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.web-cards {
+  display: flex;
+  /* Stacks cards vertically on mobile */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  flex-basis: 100%;
+}
+
+.small-card {
+  flex: 1;
+}
+
+.large-card {
+  flex: 2;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-media a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* Cookie Popup */
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cookie-popup button {
+  padding: 10px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+/* Media query */
+@media (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .burger-menu {
+    /* Hidden on tablet and desktop */
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .web-cards {
+    /* Horizontal layout on larger screens */
+    flex-direction: row;
+  }
+
+  .card {
+    max-width: 30%;
+  }
+}

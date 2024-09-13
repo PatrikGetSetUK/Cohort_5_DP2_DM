@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliment Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .compliment-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Need a Compliment?</h1>
+    <button onclick="generateCompliment()">Give me a Compliment!</button>
+    <div class="compliment-box" id="compliment">Your compliment will appear here!</div>
+
+    <script>
+        // JavaScript function to generate random compliments
+        function generateCompliment() {
+            const compliments = [
+                "You are amazing!",
+                "You're like sunshine on a rainy day.",
+                "You're a smart cookie!",
+                "You have impeccable manners.",
+                "You are the most perfect you there is.",
+                "You light up the room.",
+                "Your kindness is a balm to all who encounter it.",
+                "You're all that and a bag of chips.",
+                "You're incredible just the way you are!",
+                "You deserve a hug right now."
+            ];
+
+            // Pick a random compliment from the array
+            const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+
+            // Display the random compliment
+            document.getElementById("compliment").textContent = randomCompliment;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+span {
+  color: green;
+  background-color: greenyellow;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+.blue-text {
+  color: blue;
+  background-color: lightblue;
+  border: 1px solid blue;
+}
