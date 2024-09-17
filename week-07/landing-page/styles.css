@@ -15,6 +15,8 @@
   --color-bg-nav: #333;
   --color-headings: black;
   --color-body-text: black;
+  --color-semitransparent: rgb(0,0,0,0.5);
+  --color-shadow: gray;
 
   /* use this variable for background not background-color */
   --color-gradient: linear-gradient(90deg, rgba(199,58,110,1) 0%, rgba(255,109,42,1) 100%);
@@ -98,13 +100,24 @@ header {
   display: none;
 }
 
+.menu a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  padding-right: var(--spacing-md);
+}
+
+.menu a:hover {
+  color: var(--color-cta);
+  font-weight: bold;
+}
+
 .burger-menu {
   font-size: 2rem;
   cursor: pointer;
   /* Display on mobile devices */
   display: block;
-}
 
+}
 .mobile-menu {
   display: none;
   background-color: var(--color-bg-nav);
@@ -144,6 +157,10 @@ header {
   -o-transform: translate(-50%, -50%);
 }
 
+.hero-text button {
+  margin: var(--spacing-md);
+}
+
 .cta-button {
   padding: var(--spacing-sm) var(--spacing-md);
   background-color: var(--color-cta);
@@ -170,13 +187,41 @@ section {
   /* Stacks cards vertically on mobile */
   flex-direction: column;
   gap: var(--spacing-md);
+  align-items: center;
 }
 
 .card {
   background-color: var(--color-bg-nav);
-  padding: var(--spacing-md);
   flex-basis: 100%;
+
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-color: var(--color-semitransparent);
+  box-shadow: 0rem 0rem 3rem var(--color-shadow);
+  margin: 2rem;
 }
+
+.card img {
+  max-width: 30rem;
+  border-radius: 2rem 2rem 0 0;
+  -webkit-border-radius: 2rem 2rem 0 0;
+  -moz-border-radius: 2rem 2rem 0 0;
+  -ms-border-radius: 2rem 2rem 0 0;
+  -o-border-radius: 2rem 2rem 0 0;
+  display: block;
+  max-width: 100%;
+}
+
+.info {
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
 
 .small-card {
   flex: 1;
@@ -212,10 +257,10 @@ footer {
   flex-wrap: wrap;
 }
 
-.social-media a {
-  color: white;
+.social-media img {
   margin-right: var(--spacing-sm);
-  text-decoration: none;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }
 
 /* Cookie Popup */
@@ -303,6 +348,16 @@ footer {
 .carousel-bullets .bullet.active {
   background-color: red;
 }
+
+/* Video */
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  /* Align the video in the middle of the page (horizontaly) */
+  margin: 0 auto;
+}
+
 
 /* Responsive styles */
 /* Media query - tablets & desktop */

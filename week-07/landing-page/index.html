@@ -34,7 +34,7 @@
     <meta name="twitter:creator" content="@Tomorrowland">
 
     <!-- Favicon -->
-    <link rel="icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,8 +50,8 @@
 <body>
     <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">LOGO</div>
+        <nav class="navbar"><img src="./images/tomorrowland-logo.webp" alt="Tomorrowland Festival logo" height="32">
+            </div>
             <div class="menu">
                 <a href="#section1">Home</a>
                 <a href="#section2">About</a>
@@ -111,25 +111,67 @@
 
     <section id="section2">
         <h2>Services</h2>
+        <!-- Cards -->
         <div class="web-cards">
-            <div class="card small-card first-card">Card 1</div>
-            <div class="card large-card">Card 2 (bigger)</div>
-            <div class="card small-card">Card 3</div>
+
+            <!-- Card -->
+            <div class="card">
+                <img src="./images/slideshow1.webp" alt="Music band">
+
+                <div class="info">
+                    <h3>Main card title</h3>
+                    <p>Text preview</p>
+                    <button type="button" class="cta-button" onclick="alert('Card clicked')">Read more</button>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <img src="./images/slideshow1.webp" alt="Music band">
+
+                <div class="info">
+                    <h3>Main card title</h3>
+                    <p>Text preview</p>
+                    <button type="button" class="cta-button" onclick="alert('Card clicked')">Read more</button>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card">
+                <img src="./images/slideshow1.webp" alt="Music band">
+
+                <div class="info">
+                    <h3>Main card title</h3>
+                    <p>Text preview</p>
+                    <button type="button" class="cta-button" onclick="alert('Card clicked')">Read more</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="section3">
         <h2>Contact</h2>
         <p>Reach out to us for more information.</p>
+
+        <h3>Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QH_liqx0fuI?si=OcTe5n14iUra9FM4&amp;start=1"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="social-media">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook" height="16"></a>
+                <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter" height="16"></a>
+                <a href="#"><img src="./images/icon-instagram.svg" alt="Instagram" height="16"></a>
+                <a href="#"><img src="./images/icon-linkedin.svg" alt="LinkedIn" height="16"></a>
             </div>
             <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
