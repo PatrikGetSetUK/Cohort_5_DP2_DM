@@ -1,0 +1,19 @@
+/* Parent div */
+#shop {
+  height: 100vh;
+  background-color: cornflowerblue;
+
+  /* Flexbox modern layout model */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Child div */
+.card {
+  height: 20px;
+  width: 50px;
+  background-color: gray;
+  padding: 5px;
+  margin: 5px;
+}
